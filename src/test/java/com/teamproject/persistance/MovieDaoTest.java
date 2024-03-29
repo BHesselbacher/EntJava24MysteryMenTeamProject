@@ -1,6 +1,7 @@
 package com.teamproject.persistance;
 
 import com.teamproject.entity.Movie;
+import com.teamproject.entity.Theater;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +18,7 @@ public class MovieDaoTest {
 
     @Test
     public void testInsertAndGetById() {
-        Movie movie = new Movie("Inception", "Christopher Nolan", 148);
+        Movie movie = new Movie("Inception", "Christopher Nolan", 148, new Theater());
         int id = movieDao.insert(movie);
         Movie retrievedMovie = movieDao.getById(id);
         assertEquals(movie, retrievedMovie);
@@ -25,9 +26,9 @@ public class MovieDaoTest {
 
     @Test
     public void testUpdate() {
-        Movie movie = new Movie("Inception", "Christopher Nolan", 148);
+        Movie movie = new Movie("Inception", "Christopher Nolan", 148, new Theater());
         int id = movieDao.insert(movie);
-        Movie updatedMovie = new Movie("Inception", "Christopher Nolan", 160);
+        Movie updatedMovie = new Movie("Inception", "Christopher Nolan", 160, new Theater());
         updatedMovie.setMovieId(id);
         assertTrue(movieDao.update(updatedMovie));
         assertEquals(updatedMovie, movieDao.getById(id));
@@ -35,7 +36,7 @@ public class MovieDaoTest {
 
     @Test
     public void testDelete() {
-        Movie movie = new Movie("Inception", "Christopher Nolan", 148);
+        Movie movie = new Movie("Inception", "Christopher Nolan", 148, new Theater());
         int id = movieDao.insert(movie);
         assertTrue(movieDao.delete(movie));
         assertNull(movieDao.getById(id));
@@ -43,8 +44,8 @@ public class MovieDaoTest {
 
     @Test
     public void testGetAll() {
-        Movie movie1 = new Movie("Inception", "Christopher Nolan", 148);
-        Movie movie2 = new Movie("The Matrix", "Lana Wachowski, Lilly Wachowski", 136);
+        Movie movie1 = new Movie("Inception", "Christopher Nolan", 148, new Theater());
+        Movie movie2 = new Movie("The Matrix", "Lana Wachowski, Lilly Wachowski", 136, new Theater());
         movieDao.insert(movie1);
         movieDao.insert(movie2);
         List<Movie> movies = movieDao.getAll();
