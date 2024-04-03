@@ -34,6 +34,14 @@ public class MovieDaoTest {
         assertEquals(updatedMovie, movieDao.getById(id));
     }
 
+
+    @Test
+    public void testUpdateFail() {
+        Movie movie = new Movie("Null", "Nobody", 1, new Theater());
+        movie.setMovieId(-988);
+        assertFalse(movieDao.update(movie));
+    }
+
     @Test
     public void testDelete() {
         Movie movie = new Movie("Inception", "Christopher Nolan", 148, new Theater());
