@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b65ce04-c911-45c6-b927-0356d69d4c64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Theater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/TheaterDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheaterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BHesselbacher&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BHesselbacher/EntJava24MysteryMenTeamProject.git&quot;,
+    &quot;accountId&quot;: &quot;d92d4673-a07f-4b90-80de-37009dd505d4&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -55,6 +62,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -150,7 +162,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-11.0.22-corretto-11.0.22-f644763e9732-4a89cc43" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -165,6 +178,8 @@
       <workItem from="1711563404530" duration="126000" />
       <workItem from="1711563589508" duration="3400000" />
       <workItem from="1711738949578" duration="4394000" />
+      <workItem from="1712342016544" duration="37000" />
+      <workItem from="1712342060193" duration="111000" />
     </task>
     <servers />
   </component>
