@@ -20,7 +20,7 @@ public class Theater {
     @Column(name = "ticketCost", nullable = false)
     private double ticketCost;
 
-    @OneToMany(mappedBy = "Theater", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "theater", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnoreProperties("Theater")
     private List<Movie> movies;
 
@@ -57,6 +57,9 @@ public class Theater {
         this.ticketCost = ticketCost;
     }
 
+    public List<Movie> getMovies() {
+        return movies;
+    }
     @Override
     public String toString() {
         return "Theater{" +

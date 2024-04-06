@@ -1,7 +1,9 @@
 package com.teamproject.restService;
 
 import com.teamproject.entity.Movie;
+import com.teamproject.entity.Theater;
 import com.teamproject.persistance.MovieDao;
+import com.teamproject.persistance.TheaterDao;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,6 +18,7 @@ import java.util.List;
 public class MovieTheater {
     // Initialize the DAO instance
     private MovieDao movieDao = new MovieDao();
+    private TheaterDao theaterDao = new TheaterDao();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -34,7 +37,7 @@ public class MovieTheater {
         }
     }
     @GET
-    @Path("/{movieId}")
+    @Path("/movies/{movieId}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getMovieById(@PathParam("movieId") int movieId) {
         // Logic to retrieve movie by ID from the database
@@ -47,6 +50,23 @@ public class MovieTheater {
         } else {
             // If movie found, return it as JSON
             return Response.ok(movie).build();
+        }
+    }
+
+    @GET
+    @Path("/theaters/{theaterId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getTheaterById(@PathParam("theaterId") int theaterId) {
+        // Logic to retrieve movie by ID from the database
+        Theater theater = theaterDao.getById(theaterId);
+
+        // Check if movie is found
+        if (theater == null) {
+            // If movie not found, return 404 Not Found status
+            return Response.status(Response.Status.NOT_FOUND).build();
+        } else {
+            // If movie found, return it as JSON
+            return Response.ok(theater).build();
         }
     }
 }
