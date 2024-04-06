@@ -16,6 +16,7 @@ public class TheaterDaoTest {
         Database database = Database.getInstance();
         database.runSQL("dump.sql");
         database.runSQL("tempSQLInsertTheater.sql");
+        database.runSQL("tempSQLInsertMovie.sql");
 
         dao = new TheaterDao();
         movieDao = new MovieDao();
