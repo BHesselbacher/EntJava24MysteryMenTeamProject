@@ -57,6 +57,9 @@ public class Theater {
         this.ticketCost = ticketCost;
     }
 
+    public List<Movie> getMovies() {
+        return movies;
+    }
     @Override
     public String toString() {
         return "Theater{" +
