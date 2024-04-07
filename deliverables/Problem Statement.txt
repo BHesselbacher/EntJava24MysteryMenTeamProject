@@ -1,0 +1,3 @@
+We aim to develop a basic movie theater RESTful web service. The objective is to 
+gain practical experience in web development by building a simplified 
+application where users can browse movies and view showtimes
