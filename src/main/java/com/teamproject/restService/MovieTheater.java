@@ -2,8 +2,7 @@ package com.teamproject.restService;
 
 import com.teamproject.entity.Movie;
 import com.teamproject.entity.Theater;
-import com.teamproject.persistance.MovieDao;
-import com.teamproject.persistance.TheaterDao;
+import com.teamproject.persistance.GenericDao;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,8 +16,10 @@ import java.util.List;
 @Path("/theater")
 public class MovieTheater {
     // Initialize the DAO instance
-    private MovieDao movieDao = new MovieDao();
-    private TheaterDao theaterDao = new TheaterDao();
+//    private MovieDao movieDao = new MovieDao();
+//    private TheaterDao theaterDao = new TheaterDao();
+    private GenericDao<Movie> movieDao = new GenericDao<>(Movie.class);
+    private GenericDao<Theater> theaterDao = new GenericDao<>(Theater.class);
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
