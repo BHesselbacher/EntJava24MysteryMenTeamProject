@@ -1,0 +1,80 @@
+package com.teamproject.persistance;
+
+import com.teamproject.entity.Theater;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.criteria.HibernateCriteriaBuilder;
+
+import java.util.List;
+
+public class GenericDao<T> {
+    private final Logger logger = LogManager.getLogger(this.getClass());
+    private Class<T> type;
+    public GenericDao(Class<T> type) {
+        this.type = type;
+    }
+
+    public <T>T getById(int id) {
+        Session session = getSession();
+        T entity = (T)session.get(type, id);
+        session.close();
+        return entity;
+    }
+
+    public void delete(T entity) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(entity);
+        transaction.commit();
+        session.close();
+    }
+
+    public void update(T entity) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        session.merge(entity);
+        transaction.commit();
+    }
+
+    public int insert(T entity) {
+        Session session = getSession();
+        int id;
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(entity);
+        transaction.commit();
+        session.close();
+        return id;
+    }
+
+    public List<T> getByProperty(String property, Object value) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+
+        query.select(root).where(builder.equal(root.get(property), value));
+        return session.createSelectionQuery(query).getResultList();
+    }
+
+    public List<T> getAll() {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root =  query.from(type);
+        List<T> list = session.createQuery(query).getResultList();
+        session.close();
+        return list;
+    }
+
+
+
+    private Session getSession() {
+        return SessionFactoryProvider.getSessionFactory().openSession();
+    }
+
+}
