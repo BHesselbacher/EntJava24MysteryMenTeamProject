@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Fixed infinite recursion with json response">
+    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="responses for get alls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
     </list>
@@ -57,6 +57,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "HTTP Request.generated-requests | #3.executor": "Run",
+    "HTTP Request.generated-requests | #4.executor": "Run",
+    "HTTP Request.generated-requests | #5.executor": "Run",
     "JUnit.MovieDaoTest.executor": "Coverage",
     "JUnit.MovieDaoTest.getByIDSuccess.executor": "Run",
     "JUnit.MovieDaoTest.insertAndDeleteSuccess.executor": "Run",
@@ -104,25 +108,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.98">
-    <configuration name="dump.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/src/test/resources/dump.sql" />
-      <script-mode>FILE</script-mode>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="MovieDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeamProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.teamproject.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
-      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="MovieDaoTest.getByIDSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeamProject" />
@@ -134,38 +130,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
       <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
-      <option name="METHOD_NAME" value="getByIDSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieDaoTest.insertAndDeleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeamProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.teamproject.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
-      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
-      <option name="METHOD_NAME" value="insertAndDeleteSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TheaterDaoTest.getByIDSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeamProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.teamproject.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
-      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.TheaterDaoTest" />
       <option name="METHOD_NAME" value="getByIDSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -260,20 +224,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Database Script.dump.sql" />
-      <item itemvalue="JUnit.MovieDaoTest" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="HTTP Request.generated-requests | #4" />
+      <item itemvalue="HTTP Request.generated-requests | #5" />
       <item itemvalue="JUnit.MovieDaoTest.getByIDSuccess" />
-      <item itemvalue="JUnit.MovieDaoTest.insertAndDeleteSuccess" />
-      <item itemvalue="JUnit.TheaterDaoTest.getByIDSuccess" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.98" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
         <item itemvalue="JUnit.MovieDaoTest.getByIDSuccess" />
-        <item itemvalue="JUnit.TheaterDaoTest.getByIDSuccess" />
-        <item itemvalue="Database Script.dump.sql" />
-        <item itemvalue="JUnit.MovieDaoTest" />
-        <item itemvalue="JUnit.MovieDaoTest.insertAndDeleteSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +250,7 @@
       <option name="presentableId" value="Default" />
       <updated>1712427826738</updated>
       <workItem from="1712427827782" duration="2426000" />
+      <workItem from="1712756369451" duration="6786000" />
     </task>
     <task id="LOCAL-00001" summary="Created database utility">
       <option name="closed" value="true" />
@@ -447,7 +412,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712732195377</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="responses for get alls">
+      <option name="closed" value="true" />
+      <created>1712732467007</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1712732467007</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +444,8 @@
     <MESSAGE value="JavaDoc" />
     <MESSAGE value="Pom updates" />
     <MESSAGE value="Fixed infinite recursion with json response" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed infinite recursion with json response" />
+    <MESSAGE value="responses for get alls" />
+    <option name="LAST_COMMIT_MESSAGE" value="responses for get alls" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1712728893552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

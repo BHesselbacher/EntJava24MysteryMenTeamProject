@@ -3,11 +3,10 @@ package com.teamproject.restService;
 import com.teamproject.entity.Movie;
 import com.teamproject.entity.Theater;
 import com.teamproject.persistance.GenericDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -22,6 +21,8 @@ public class MovieTheater {
 
     private GenericDao<Movie> movieDao = new GenericDao<>(Movie.class);
     private GenericDao<Theater> theaterDao = new GenericDao<>(Theater.class);
+
+    Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      * fetches all movies
@@ -91,6 +92,60 @@ public class MovieTheater {
         }
     }
 
+    // TODO better responses?
+
+    /**
+     * Adds a movie
+     * @param movie movie to add, from JSON
+     * @return JSON of added movie, or error if bad request
+     */
+    @POST
+    @Path("/movies")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response putMovie(Movie movie) {
+
+        int id;
+        id = movie.getTheater().getTheaterId();
+
+
+        // Checks if theater already exists
+        // If not, add it
+        // Theater must match exactly, or it will make a new one
+        // To avoid exact matching, maybe only check id?
+        if (theaterDao.getById(id).equals(movie.getTheater())) {
+            movie.setTheater(theaterDao.getById(id));
+        } else {
+            Theater theater = movie.getTheater();
+            theater.setTheaterId(theaterDao.insert(theater));
+        }
+
+        if ((id = movieDao.insert(movie)) > -1) {
+            return Response.ok(movieDao.getById(id)).build();
+        } else {
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
+    }
+
+    /**
+     * Ddds a theater
+     * @param theater theater to add, from JSON
+     * @return JSON of added movie, or error if bad request
+     */
+    @POST
+    @Path("/theaters")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response putTheater(Theater theater) {
+        int id;
+
+        if ((id = theaterDao.insert(theater)) > -1) {
+            return Response.ok(theaterDao.getById(id)).build();
+        } else {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+    }
+
     /**
      * Fetches theater based on id
      * @param theaterId id to fetch
@@ -111,6 +166,28 @@ public class MovieTheater {
             // If movie found, return it as JSON
             return Response.ok(theater).build();
         }
+    }
+
+    /**
+     * Deletes a movie
+     * @param id movie id
+     */
+    @DELETE
+    @Path("/movies/{id}")
+    public void deleteMovie(@PathParam("id") int id) {
+        Movie temp = movieDao.getById(id);
+        movieDao.delete(temp);
+    }
+
+    /**
+     * Deletes a theater
+     * @param id theater id
+     */
+    @DELETE
+    @Path("/theaters/{id}")
+    public void deleteTheater(@PathParam("id") int id) {
+        Theater temp = theaterDao.getById(id);
+        theaterDao.delete(temp);
     }
 }
 
