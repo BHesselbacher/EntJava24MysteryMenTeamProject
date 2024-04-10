@@ -40,6 +40,17 @@ public class Movie {
         this.theater = theater;
     }
 
+    /**
+     * Constructs a movie based on another movie
+     * @param newMovie Movie to be copied
+     */
+    public Movie(Movie newMovie) {
+        this.title = newMovie.title;
+        this.director = newMovie.director;
+        this.durationMinutes = newMovie.durationMinutes;
+        this.theater = newMovie.theater;
+    }
+
 
     /**
      * Gets movie id
@@ -119,5 +130,26 @@ public class Movie {
      */
     public void setTheater(Theater theater) {
         this.theater = theater;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "movieId=" + movieId +
+                ", title='" + title + '\'' +
+                ", director='" + director + '\'' +
+                ", durationMinutes=" + durationMinutes +
+                ", theater=" + theater +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || o.getClass() != getClass()) return false;
+        Movie movie = (Movie) o;
+        return (movieId == movie.movieId && title.equals(movie.title) &&
+                director.equals(movie.director) && durationMinutes == movie.durationMinutes
+                && theater.equals(movie.theater));
     }
 }

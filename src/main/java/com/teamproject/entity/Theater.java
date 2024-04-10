@@ -108,4 +108,13 @@ public class Theater {
                 ", ticketCost=" + ticketCost +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || o.getClass() != getClass()) return false;
+        Theater theater = (Theater) o;
+        return (theaterId == theater.theaterId && theaterName.equals(theater.theaterName)
+            && ticketCost == theater.ticketCost);
+    }
 }
