@@ -1,6 +1,5 @@
 package com.teamproject.persistance;
 
-import com.teamproject.entity.SessionFactoryProvider;
 import com.teamproject.entity.Theater;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
