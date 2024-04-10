@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="JavaDoc">
+    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Pom updates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Theater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +125,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieDaoTest.getByIDSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeamProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teamproject.persistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
+      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
+      <option name="METHOD_NAME" value="getByIDSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieDaoTest.insertAndDeleteSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeamProject" />
       <extension name="coverage">
@@ -135,22 +152,6 @@
       <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
       <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
       <option name="METHOD_NAME" value="insertAndDeleteSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MovieDaoTest.testGetProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeamProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.teamproject.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
-      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
-      <option name="METHOD_NAME" value="testGetProperty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -262,18 +263,18 @@
     <list>
       <item itemvalue="Database Script.dump.sql" />
       <item itemvalue="JUnit.MovieDaoTest" />
+      <item itemvalue="JUnit.MovieDaoTest.getByIDSuccess" />
       <item itemvalue="JUnit.MovieDaoTest.insertAndDeleteSuccess" />
-      <item itemvalue="JUnit.MovieDaoTest.testGetProperty" />
       <item itemvalue="JUnit.TheaterDaoTest.getByIDSuccess" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.98" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieDaoTest.getByIDSuccess" />
         <item itemvalue="JUnit.TheaterDaoTest.getByIDSuccess" />
         <item itemvalue="Database Script.dump.sql" />
         <item itemvalue="JUnit.MovieDaoTest" />
         <item itemvalue="JUnit.MovieDaoTest.insertAndDeleteSuccess" />
-        <item itemvalue="JUnit.MovieDaoTest.testGetProperty" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +432,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712730614339</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Pom updates">
+      <option name="closed" value="true" />
+      <created>1712731412057</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1712731412057</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +462,8 @@
     <MESSAGE value="New tests" />
     <MESSAGE value="misc" />
     <MESSAGE value="JavaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="JavaDoc" />
+    <MESSAGE value="Pom updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pom updates" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1712728893552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

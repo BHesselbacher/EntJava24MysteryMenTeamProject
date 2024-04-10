@@ -1,5 +1,6 @@
 package com.teamproject.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 /**
@@ -20,6 +21,7 @@ public class Movie {
     @Column(name = "duration")
     private int durationMinutes;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "theaterId")
     private Theater theater;

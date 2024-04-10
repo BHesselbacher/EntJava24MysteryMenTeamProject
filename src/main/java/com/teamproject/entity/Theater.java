@@ -2,6 +2,7 @@ package com.teamproject.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -23,6 +24,7 @@ public class Theater {
     @Column(name = "ticketCost", nullable = false)
     private double ticketCost;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "theater", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnoreProperties("Theater")
     private List<Movie> movies;
