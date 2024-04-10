@@ -17,6 +17,7 @@
     <testng.version>RELEASE</testng.version>
     <hibernate.version>6.4.3.Final</hibernate.version>
     <mysql-version>8.0.16</mysql-version>
+    <jaxb-api-version>2.3.1</jaxb-api-version>
   </properties>
   <dependencies>
 
@@ -110,10 +111,20 @@
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
-      <version>2.3.1</version> <!-- or the latest version available -->
+      <version>${jaxb-api-version}</version>
     </dependency>
   </dependencies>
   <build>
     <finalName>TeamProject</finalName>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>7</source>
+                  <target>7</target>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 </project>
