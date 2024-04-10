@@ -1,6 +1,5 @@
 package com.teamproject.persistance;
 
-import com.teamproject.entity.Theater;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
@@ -8,17 +7,31 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.criteria.HibernateCriteriaBuilder;
 
 import java.util.List;
 
+/**
+ * Represents a generic dao
+ * @param <T> type to be used
+ */
 public class GenericDao<T> {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private Class<T> type;
+
+    /**
+     * Constructs a dao
+     * @param type class to be used for this dao
+     */
     public GenericDao(Class<T> type) {
         this.type = type;
     }
 
+    /**
+     * Gets by id
+     * @param id id to fetch
+     * @return resulting row
+     * @param <T> type
+     */
     public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
@@ -26,6 +39,10 @@ public class GenericDao<T> {
         return entity;
     }
 
+    /**
+     * Deletes a row
+     * @param entity object to delete
+     */
     public void delete(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -34,6 +51,10 @@ public class GenericDao<T> {
         session.close();
     }
 
+    /**
+     * Updates a row
+     * @param entity object to update
+     */
     public void update(T entity) {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
@@ -41,6 +62,11 @@ public class GenericDao<T> {
         transaction.commit();
     }
 
+    /**
+     * Inserts a row
+     * @param entity object to insert
+     * @return id of corresponding row
+     */
     public int insert(T entity) {
         Session session = getSession();
         int id;
@@ -51,6 +77,12 @@ public class GenericDao<T> {
         return id;
     }
 
+    /**
+     * Fetches rows based on a matching property
+     * @param property column name
+     * @param value value to match
+     * @return resulting rows
+     */
     public List<T> getByProperty(String property, Object value) {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -61,6 +93,10 @@ public class GenericDao<T> {
         return session.createSelectionQuery(query).getResultList();
     }
 
+    /**
+     * Fetches all rows
+     * @return all rows
+     */
     public List<T> getAll() {
         Session session = getSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -71,8 +107,10 @@ public class GenericDao<T> {
         return list;
     }
 
-
-
+    /**
+     * Gets the session
+     * @return session
+     */
     private Session getSession() {
         return SessionFactoryProvider.getSessionFactory().openSession();
     }

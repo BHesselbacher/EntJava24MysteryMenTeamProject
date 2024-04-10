@@ -100,6 +100,11 @@ public class Theater {
     public List<Movie> getMovies() {
         return movies;
     }
+
+    /**
+     * Gets string of data
+     * @return string-ified data
+     */
     @Override
     public String toString() {
         return "Theater{" +
@@ -109,6 +114,11 @@ public class Theater {
                 '}';
     }
 
+    /**
+     * Compares Theater objects
+     * @param o object to be compared
+     * @return if object equals this instance
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

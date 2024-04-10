@@ -13,14 +13,20 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
+/**
+ * MovieTheater api
+ */
 @Path("/theater")
 public class MovieTheater {
     // Initialize the DAO instance
-//    private MovieDao movieDao = new MovieDao();
-//    private TheaterDao theaterDao = new TheaterDao();
+
     private GenericDao<Movie> movieDao = new GenericDao<>(Movie.class);
     private GenericDao<Theater> theaterDao = new GenericDao<>(Theater.class);
 
+    /**
+     * fetches all movies
+     * @return http response
+     */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllMovies() {
@@ -37,6 +43,12 @@ public class MovieTheater {
             return Response.ok(entity).build();
         }
     }
+
+    /**
+     * fetches movie based on id
+     * @param movieId id to fetch
+     * @return http response
+     */
     @GET
     @Path("/movies/{movieId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -54,6 +66,11 @@ public class MovieTheater {
         }
     }
 
+    /**
+     * Fetches theater based on id
+     * @param theaterId id to fetch
+     * @return http response
+     */
     @GET
     @Path("/theaters/{theaterId}")
     @Produces(MediaType.APPLICATION_JSON)

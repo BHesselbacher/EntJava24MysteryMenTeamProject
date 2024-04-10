@@ -9,22 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Misc changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="misc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Theater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/entity/Theater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/Dao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/MovieDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/TheaterDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/TheaterDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/TheaterDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,7 +360,79 @@
       <option name="project" value="LOCAL" />
       <updated>1712720046191</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Log4j properties">
+      <option name="closed" value="true" />
+      <created>1712729992318</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712729992318</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Generic Dao">
+      <option name="closed" value="true" />
+      <created>1712730006146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730006146</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Base webpage for documentation">
+      <option name="closed" value="true" />
+      <created>1712730021135</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730021135</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Removed old files">
+      <option name="closed" value="true" />
+      <created>1712730034096</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730034096</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gitignore updated">
+      <option name="closed" value="true" />
+      <created>1712730042861</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730042861</updated>
+    </task>
+    <task id="LOCAL-00014" summary="New tests">
+      <option name="closed" value="true" />
+      <created>1712730051395</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730051395</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Utility methods">
+      <option name="closed" value="true" />
+      <created>1712730066138</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730066138</updated>
+    </task>
+    <task id="LOCAL-00016" summary="New tests">
+      <option name="closed" value="true" />
+      <created>1712730099091</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730099091</updated>
+    </task>
+    <task id="LOCAL-00017" summary="misc">
+      <option name="closed" value="true" />
+      <created>1712730109240</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712730109240</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +446,15 @@
     <MESSAGE value="Tests" />
     <MESSAGE value="JavaDoc" />
     <MESSAGE value="Misc changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Misc changes" />
+    <MESSAGE value="Log4j properties" />
+    <MESSAGE value="Generic Dao" />
+    <MESSAGE value="Base webpage for documentation" />
+    <MESSAGE value="Removed old files" />
+    <MESSAGE value="gitignore updated" />
+    <MESSAGE value="Utility methods" />
+    <MESSAGE value="New tests" />
+    <MESSAGE value="misc" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1712728893552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

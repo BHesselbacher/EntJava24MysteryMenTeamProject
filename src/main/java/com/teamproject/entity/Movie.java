@@ -132,6 +132,10 @@ public class Movie {
         this.theater = theater;
     }
 
+    /**
+     * Gets string of data
+     * @return string-ified data
+     */
     @Override
     public String toString() {
         return "Movie{" +
@@ -143,6 +147,11 @@ public class Movie {
                 '}';
     }
 
+    /**
+     * Compares Movie objects
+     * @param o object to be compared
+     * @return if object equals this instance
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
