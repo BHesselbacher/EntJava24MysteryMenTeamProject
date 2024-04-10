@@ -1,4 +1,4 @@
-package com.teamproject.entity;
+package com.teamproject.persistance;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
