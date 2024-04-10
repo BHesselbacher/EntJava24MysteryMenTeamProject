@@ -29,6 +29,7 @@ public class MovieTheater {
      */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
+    @Path("/movies")
     public Response getAllMovies() {
         // Logic to retrieve all moviees from the database
         List<Movie> allMovies = movieDao.getAll();
@@ -39,7 +40,31 @@ public class MovieTheater {
             return Response.status(Response.Status.NOT_FOUND).build();
         } else {
             // If movies were found, return them as JSON
-            GenericEntity<List<Movie>> entity = new GenericEntity<List<Movie>>(allMovies) {};
+            GenericEntity<List<Movie>> entity = new GenericEntity<>(allMovies) {
+            };
+            return Response.ok(entity).build();
+        }
+    }
+
+    /**
+     * fetches all theaters
+     * @return http response
+     */
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/theaters")
+    public Response getAllTheaters() {
+        // Logic to retrieve all theaters from the database
+        List<Theater> allTheaters = theaterDao.getAll();
+
+        // Check if any moviees were found
+        if (allTheaters.isEmpty()) {
+            // If no movies were found, return 404 Not Found status
+            return Response.status(Response.Status.NOT_FOUND).build();
+        } else {
+            // If movies were found, return them as JSON
+            GenericEntity<List<Theater>> entity = new GenericEntity<>(allTheaters) {
+            };
             return Response.ok(entity).build();
         }
     }
