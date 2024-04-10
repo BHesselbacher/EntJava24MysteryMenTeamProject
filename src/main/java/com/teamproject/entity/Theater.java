@@ -6,6 +6,9 @@ import jakarta.persistence.*;
 
 import java.util.List;
 
+/**
+ * Represents a theater object
+ */
 @Entity
 @Table(name = "Theater")
 @JsonInclude(JsonInclude.Include.NON_NULL) // Include only non-null fields in JSON serialization
@@ -24,39 +27,76 @@ public class Theater {
     @JsonIgnoreProperties("Theater")
     private List<Movie> movies;
 
+    /**
+     * Default constructor
+     */
     public Theater() {
     }
 
+    /**
+     * Constructs a theater object
+     * @param theaterId theater id
+     * @param theaterName theater name
+     * @param ticketCost ticket cost
+     */
     public Theater(int theaterId, String theaterName, double ticketCost) {
         this.theaterId = theaterId;
         this.theaterName = theaterName;
         this.ticketCost = ticketCost;
     }
 
+    /**
+     * Gets the theater id
+     * @return theater id
+     */
     public int getTheaterId() {
         return theaterId;
     }
 
+    /**
+     * Sets the theater id
+     * @param theaterId theater id
+     */
     public void setTheaterId(int theaterId) {
         this.theaterId = theaterId;
     }
 
+    /**
+     * Gets the theater name
+     * @return theater name
+     */
     public String getTheaterName() {
         return theaterName;
     }
 
+    /**
+     * Sets the theater name
+     * @param theaterName theater name
+     */
     public void setTheaterName(String theaterName) {
         this.theaterName = theaterName;
     }
 
+    /**
+     * Gets the ticket cost
+     * @return ticket cost
+     */
     public double getTicketCost() {
         return ticketCost;
     }
 
+    /**
+     * Sets the ticket cost
+     * @param ticketCost ticket cost
+     */
     public void setTicketCost(double ticketCost) {
         this.ticketCost = ticketCost;
     }
 
+    /**
+     * Gets associated movies
+     * @return movie list
+     */
     public List<Movie> getMovies() {
         return movies;
     }
