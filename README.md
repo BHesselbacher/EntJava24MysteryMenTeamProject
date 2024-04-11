@@ -23,8 +23,10 @@
 - Prepare a brief overview of the project's features and functionalities.
 
 ## Technologies used
-- Log4j
-- Junit
-- Hibernate
-- Jackson
+- Log4j 2.10.0
+- Junit 5.8.2
+- Hibernate 6.4.3
+- Jackson 2.16.1
+- Jaxb api 2.3.1
+- MySQL 8.0.33
 - RoboPojo
