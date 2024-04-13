@@ -6,13 +6,9 @@
           rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mystery Men</a>
-        </div>
-    </nav>
-</header>
+
+<%@include file="navbar.jsp"%>
+
 
 <main>
 <%-- TODO add documentation --%>
