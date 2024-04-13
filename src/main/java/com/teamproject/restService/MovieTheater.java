@@ -32,19 +32,19 @@ public class MovieTheater {
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/movies")
     public Response getAllMovies() {
-        // Logic to retrieve all moviees from the database
+        // Logic to retrieve all movies from the database
         List<Movie> allMovies = movieDao.getAll();
-
-        // Check if any moviees were found
-        if (allMovies.isEmpty()) {
-            // If no movies were found, return 404 Not Found status
-            return Response.status(Response.Status.NOT_FOUND).build();
-        } else {
-            // If movies were found, return them as JSON
-            GenericEntity<List<Movie>> entity = new GenericEntity<>(allMovies) {
-            };
-            return Response.ok(entity).build();
-        }
+        return fetchAll(allMovies);
+//        // Check if any movies were found
+//        if (allMovies.isEmpty()) {
+//            // If no movies were found, return 404 Not Found status
+//            return Response.status(Response.Status.NOT_FOUND).build();
+//        } else {
+//            // If movies were found, return them as JSON
+//            GenericEntity<List<Movie>> entity = new GenericEntity<>(allMovies) {
+//            };
+//            return Response.ok(entity).build();
+//        }
     }
 
     /**
@@ -57,21 +57,36 @@ public class MovieTheater {
     public Response getAllTheaters() {
         // Logic to retrieve all theaters from the database
         List<Theater> allTheaters = theaterDao.getAll();
+        return fetchAll(allTheaters);
+//        // Check if any movies were found
+//        if (allTheaters.isEmpty()) {
+//            // If no movies were found, return 404 Not Found status
+//            return Response.status(Response.Status.NOT_FOUND).build();
+//        } else {
+//            // If movies were found, return them as JSON
+//            GenericEntity<List<Theater>> entity = new GenericEntity<>(allTheaters) {
+//            };
+//            return Response.ok(entity).build();
+//        }
+    }
 
-        // Check if any moviees were found
-        if (allTheaters.isEmpty()) {
-            // If no movies were found, return 404 Not Found status
+    /**
+     * Handles fetching all of something
+     * @param list
+     * @return
+     */
+    private Response fetchAll(List list) {
+        if (list.isEmpty()) {
             return Response.status(Response.Status.NOT_FOUND).build();
         } else {
-            // If movies were found, return them as JSON
-            GenericEntity<List<Theater>> entity = new GenericEntity<>(allTheaters) {
+            GenericEntity<List> entity = new GenericEntity<>(list) {
             };
             return Response.ok(entity).build();
         }
     }
 
     /**
-     * fetches movie based on id
+     * Fetches a movie based on id
      * @param movieId id to fetch
      * @return http response
      */
@@ -88,6 +103,27 @@ public class MovieTheater {
             return Response.status(Response.Status.NOT_FOUND).build();
         } else {
             // If movie found, return it as JSON
+            return Response.ok(movie).build();
+        }
+    }
+
+
+    /**
+     * Fetches a movie based on title
+     * @param movieTitle title to search for
+     * @return http response
+     */
+    @GET
+    @Path("/movies/name/{movieId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getMovieByTitle(@PathParam("movieId") String movieTitle) {
+        // Logic to retrieve movie by ID from the database
+        List<Movie> movie = movieDao.getByProperty("title", movieTitle);
+
+        // Check if movie is found
+        if (movie.size() < 1) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        } else {
             return Response.ok(movie).build();
         }
     }
@@ -128,7 +164,7 @@ public class MovieTheater {
     }
 
     /**
-     * Ddds a theater
+     * Adds a theater
      * @param theater theater to add, from JSON
      * @return JSON of added movie, or error if bad request
      */
