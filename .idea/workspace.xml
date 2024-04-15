@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Condensed methods">
+    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="misc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/TheaterDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/TheaterDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +267,7 @@
       <updated>1712427826738</updated>
       <workItem from="1712427827782" duration="2426000" />
       <workItem from="1712756369451" duration="9740000" />
-      <workItem from="1713029189407" duration="2999000" />
+      <workItem from="1713029189407" duration="4366000" />
     </task>
     <task id="LOCAL-00001" summary="Created database utility">
       <option name="closed" value="true" />
@@ -481,7 +477,39 @@
       <option name="project" value="LOCAL" />
       <updated>1713031019554</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added new method to search like">
+      <option name="closed" value="true" />
+      <created>1713142464612</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713142464612</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added tests for searching by like">
+      <option name="closed" value="true" />
+      <created>1713142482717</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713142482717</updated>
+    </task>
+    <task id="LOCAL-00029" summary="New methods">
+      <option name="closed" value="true" />
+      <created>1713142498639</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713142498639</updated>
+    </task>
+    <task id="LOCAL-00030" summary="misc">
+      <option name="closed" value="true" />
+      <created>1713143913637</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1713143913637</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +529,6 @@
     <MESSAGE value="gitignore updated" />
     <MESSAGE value="Utility methods" />
     <MESSAGE value="New tests" />
-    <MESSAGE value="misc" />
     <MESSAGE value="JavaDoc" />
     <MESSAGE value="Pom updates" />
     <MESSAGE value="Fixed infinite recursion with json response" />
@@ -510,7 +537,11 @@
     <MESSAGE value="navbar change" />
     <MESSAGE value="Error page" />
     <MESSAGE value="Condensed methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Condensed methods" />
+    <MESSAGE value="Added new method to search like" />
+    <MESSAGE value="Added tests for searching by like" />
+    <MESSAGE value="New methods" />
+    <MESSAGE value="misc" />
+    <option name="LAST_COMMIT_MESSAGE" value="misc" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1713142180012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
