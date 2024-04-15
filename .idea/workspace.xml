@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="responses for get alls">
+    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Condensed methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/persistance/GenericDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/MovieDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/TheaterDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/teamproject/persistance/TheaterDaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -65,6 +69,7 @@
     "JUnit.MovieDaoTest.getByIDSuccess.executor": "Run",
     "JUnit.MovieDaoTest.insertAndDeleteSuccess.executor": "Run",
     "JUnit.MovieDaoTest.testGetProperty.executor": "Run",
+    "JUnit.MovieDaoTest.testGetPropertyLike.executor": "Run",
     "JUnit.MovieDaoTest.testId.executor": "Run",
     "JUnit.TheaterDaoTest.executor": "Coverage",
     "JUnit.TheaterDaoTest.getByIDSuccess.executor": "Run",
@@ -106,12 +111,12 @@
       <recent name="C:\Users\rgarc\IdeaProjects\EntJava24MysteryMenTeamProject\src\main\resources" />
       <recent name="C:\Users\rgarc\IdeaProjects\temp\BeforeTheFuckUpShit\EntJava24MysteryMenTeamProject\src\main\resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rgarc\IdeaProjects\EntJava24MysteryMenTeamProject\src\main\webapp" />
+    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.98">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
@@ -120,7 +125,7 @@
     <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="MovieDaoTest.getByIDSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieDaoTest.testGetPropertyLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TeamProject" />
       <extension name="coverage">
         <pattern>
@@ -130,8 +135,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
       <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
-      <option name="METHOD_NAME" value="getByIDSuccess" />
+      <option name="METHOD_NAME" value="testGetPropertyLike" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TheaterDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TeamProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.teamproject.persistance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
+      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.TheaterDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -225,19 +245,19 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #2" />
-      <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="HTTP Request.generated-requests | #4" />
       <item itemvalue="HTTP Request.generated-requests | #5" />
-      <item itemvalue="JUnit.MovieDaoTest.getByIDSuccess" />
+      <item itemvalue="JUnit.MovieDaoTest.testGetPropertyLike" />
+      <item itemvalue="JUnit.TheaterDaoTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.98" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TheaterDaoTest" />
+        <item itemvalue="JUnit.MovieDaoTest.testGetPropertyLike" />
         <item itemvalue="HTTP Request.generated-requests | #5" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #4" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
-        <item itemvalue="JUnit.MovieDaoTest.getByIDSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +270,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712427826738</updated>
       <workItem from="1712427827782" duration="2426000" />
-      <workItem from="1712756369451" duration="6786000" />
+      <workItem from="1712756369451" duration="9740000" />
+      <workItem from="1713029189407" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="Created database utility">
       <option name="closed" value="true" />
@@ -420,7 +441,47 @@
       <option name="project" value="LOCAL" />
       <updated>1712732467007</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="new responses">
+      <option name="closed" value="true" />
+      <created>1712770575189</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1712770575189</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Error page">
+      <option name="closed" value="true" />
+      <created>1713016318173</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713016318173</updated>
+    </task>
+    <task id="LOCAL-00024" summary="navbar change">
+      <option name="closed" value="true" />
+      <created>1713016356246</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713016356246</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Error page">
+      <option name="closed" value="true" />
+      <created>1713016373070</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713016373070</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Condensed methods">
+      <option name="closed" value="true" />
+      <created>1713031019554</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713031019554</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,10 +506,14 @@
     <MESSAGE value="Pom updates" />
     <MESSAGE value="Fixed infinite recursion with json response" />
     <MESSAGE value="responses for get alls" />
-    <option name="LAST_COMMIT_MESSAGE" value="responses for get alls" />
+    <MESSAGE value="new responses" />
+    <MESSAGE value="navbar change" />
+    <MESSAGE value="Error page" />
+    <MESSAGE value="Condensed methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Condensed methods" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1712728893552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1713142180012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.teamproject.persistance.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$MovieDaoTest.ic" NAME="MovieDaoTest Coverage Results" MODIFIED="1712729837565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

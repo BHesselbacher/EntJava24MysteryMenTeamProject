@@ -114,14 +114,12 @@ public class MovieTheater {
      * @return http response
      */
     @GET
-    @Path("/movies/name/{movieId}")
+    @Path("/movies/title/{movieTitle}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getMovieByTitle(@PathParam("movieId") String movieTitle) {
-        // Logic to retrieve movie by ID from the database
-        List<Movie> movie = movieDao.getByProperty("title", movieTitle);
+    public Response getMovieByTitle(@PathParam("movieTitle") String movieTitle) {
+        List<Movie> movie = movieDao.getByPropertyLike("title", movieTitle);
 
-        // Check if movie is found
-        if (movie.size() < 1) {
+        if (movie.isEmpty()) {
             return Response.status(Response.Status.NOT_FOUND).build();
         } else {
             return Response.ok(movie).build();
@@ -129,6 +127,24 @@ public class MovieTheater {
     }
 
     // TODO better responses?
+
+    /**
+     * Fetches a theaer based on name
+     * @param theaterName name to search for
+     * @return http response
+     */
+    @GET
+    @Path("/theaters/name/{theaterName}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getTheaterByTitle(@PathParam("theaterName") String theaterName) {
+        List<Theater> theaters = theaterDao.getByPropertyLike("theaterName", theaterName);
+
+        if (theaters.isEmpty()) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        } else {
+            return Response.ok(theaters).build();
+        }
+    }
 
     /**
      * Adds a movie
