@@ -18,13 +18,14 @@ Our API helps keep things convenient by allowing a way to store, update, and rec
 - Design API endpoints for retrieving theater information and movie listings.
 - Implement basic functionality to fetch and display theater and movie data.
 - Create the database schema for theaters and movies.
-- **Project plan would be improved with details such as creating the database, listing the various classes you will be creating.**
+- Create a DAO that will work for both movies and theaters
+- Create an API class that will handle get requests, post requests, and delete requests
 
 ## Week 3: Testing and Finalization
 - Conduct testing of the API's functionality.
+- Test the DAO to ensure full code coverage anf functionality
 - Debug any issues and make necessary adjustments.
 - Finalize the API documentation outlining the available endpoints and response formats.
-- Document which classes will need to be unit tested.
 - Prepare a brief overview of the project's features and functionalities.
 
 ## Technologies used
