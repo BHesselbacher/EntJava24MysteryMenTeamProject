@@ -1,5 +1,10 @@
 # EntJava24MysteryMenTeamProject
 
+## Problem Statement
+For movie enthusiasts, keeping up with movies in the theaters can be a little time consuming. Movies constantly change up, different theaters charge different prices for tickets, and checking all of that can require jumping across the web. What if, instead, there was a way for the community to keep each other updated on all of this information?
+
+Our API helps keep things convenient by allowing a way to store, update, and receive movies and the theater they're showing in. Get information on a movie or a theater with a get request, add or update a movie or theater with a post request, and remove them with a delete request. With this, it's easy to keep up with what movies are playing at your local theaters.
+
 # Project Plan
 
 ## Week 1: Planning and Setup
