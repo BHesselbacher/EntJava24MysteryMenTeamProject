@@ -19,7 +19,7 @@ public class TheaterDaoTest {
 
     GenericDao<Theater> dao;
     GenericDao<Movie> movieDao;
-    private Logger logger = LogManager.getLogger(this.getClass());
+    private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      * Setup before each test
@@ -89,6 +89,14 @@ public class TheaterDaoTest {
         ArrayList<Theater> theaters = (ArrayList<Theater>) dao.getByProperty("theaterName", "test");
         logger.info(theaters);
         assertTrue(theaters.get(0).equals(dao.getById(1)));
+    }
+
+    @Test
+    void testGetPropertyLike() {
+        ArrayList<Theater> theaters = (ArrayList<Theater>) dao.getByPropertyLike("theaterName", "test");
+        logger.info(theaters);
+        logger.info(dao.getById(1) + "");
+        assertTrue(!theaters.isEmpty());
     }
 
 

@@ -90,4 +90,12 @@ public class MovieDaoTest {
         logger.info(dao.getById(1) + "");
         assertTrue(movies.get(0).equals(dao.getById(1)));
     }
+
+    @Test
+    void testGetPropertyLike() {
+        ArrayList<Movie> movies = (ArrayList<Movie>) dao.getByPropertyLike("title", "test");
+        logger.info(movies);
+        logger.info(dao.getById(1) + "");
+        assertTrue(!movies.isEmpty());
+    }
 }
