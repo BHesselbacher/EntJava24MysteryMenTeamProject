@@ -2,6 +2,7 @@ package com.teamproject.persistance;
 
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -91,6 +92,23 @@ public class GenericDao<T> {
 
         query.select(root).where(builder.equal(root.get(property), value));
         return session.createSelectionQuery(query).getResultList();
+    }
+
+    /**
+     * Fetches rows based on a like property
+     * @param property
+     * @param value
+     * @return
+     */
+    public List<T> getByPropertyLike(String property, Object value) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        Predicate predicate = builder.like(root.get(property), "%" + value + "%");
+
+        query.where(predicate);
+        return session.createQuery(query).getResultList();
     }
 
     /**
