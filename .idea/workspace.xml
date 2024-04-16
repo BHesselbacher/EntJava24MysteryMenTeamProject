@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="misc">
+    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Modified some comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +80,7 @@
     "Maven.TeamProject [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 8.5.98.executor": "Debug",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
@@ -273,7 +273,7 @@
       <workItem from="1713215483593" duration="39000" />
       <workItem from="1713215992722" duration="902000" />
       <workItem from="1713216934836" duration="911000" />
-      <workItem from="1713284590511" duration="2449000" />
+      <workItem from="1713284590511" duration="2599000" />
     </task>
     <task id="LOCAL-00001" summary="Created database utility">
       <option name="closed" value="true" />
@@ -523,15 +523,37 @@
       <option name="project" value="LOCAL" />
       <updated>1713143940472</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Basic documentation">
+      <option name="closed" value="true" />
+      <created>1713287093053</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1713287093053</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Basic documentation">
+      <option name="closed" value="true" />
+      <created>1713287104733</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1713287104733</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Modified some comments">
+      <option name="closed" value="true" />
+      <created>1713287126005</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1713287126005</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created database utility" />
-    <MESSAGE value="Created properties loader interface" />
     <MESSAGE value="Added method to get movies" />
     <MESSAGE value="Methods to retrieve data" />
     <MESSAGE value="Tests" />
@@ -555,7 +577,9 @@
     <MESSAGE value="Added tests for searching by like" />
     <MESSAGE value="New methods" />
     <MESSAGE value="misc" />
-    <option name="LAST_COMMIT_MESSAGE" value="misc" />
+    <MESSAGE value="Basic documentation" />
+    <MESSAGE value="Modified some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified some comments" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1713142180012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -46,7 +46,7 @@
         <div class="p-3 mb-2 bg-danger text-white">
             DELETE /theater/[movies|theaters]
         </div>
-        <p>adds a new movie or theater</p>
+        <p>deletes a movie or theater</p>
     </div>
 </main>
 
