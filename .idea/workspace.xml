@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="misc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/teamproject/restService/MovieTheater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
     "Maven.TeamProject [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 8.5.98.executor": "Run",
+    "Tomcat Server.Tomcat 8.5.98.executor": "Debug",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/rgarc/IdeaProjects/EntJava24MysteryMenTeamProject/src/test/resources",
@@ -267,7 +269,11 @@
       <updated>1712427826738</updated>
       <workItem from="1712427827782" duration="2426000" />
       <workItem from="1712756369451" duration="9740000" />
-      <workItem from="1713029189407" duration="4366000" />
+      <workItem from="1713029189407" duration="7085000" />
+      <workItem from="1713215483593" duration="39000" />
+      <workItem from="1713215992722" duration="902000" />
+      <workItem from="1713216934836" duration="911000" />
+      <workItem from="1713284590511" duration="2449000" />
     </task>
     <task id="LOCAL-00001" summary="Created database utility">
       <option name="closed" value="true" />
@@ -509,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713143913637</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="misc">
+      <option name="closed" value="true" />
+      <created>1713143940472</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1713143940472</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

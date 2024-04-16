@@ -34,17 +34,7 @@ public class MovieTheater {
     public Response getAllMovies() {
         // Logic to retrieve all movies from the database
         List<Movie> allMovies = movieDao.getAll();
-        return fetchAll(allMovies);
-//        // Check if any movies were found
-//        if (allMovies.isEmpty()) {
-//            // If no movies were found, return 404 Not Found status
-//            return Response.status(Response.Status.NOT_FOUND).build();
-//        } else {
-//            // If movies were found, return them as JSON
-//            GenericEntity<List<Movie>> entity = new GenericEntity<>(allMovies) {
-//            };
-//            return Response.ok(entity).build();
-//        }
+        return fetchAllResponse(allMovies);
     }
 
     /**
@@ -57,25 +47,15 @@ public class MovieTheater {
     public Response getAllTheaters() {
         // Logic to retrieve all theaters from the database
         List<Theater> allTheaters = theaterDao.getAll();
-        return fetchAll(allTheaters);
-//        // Check if any movies were found
-//        if (allTheaters.isEmpty()) {
-//            // If no movies were found, return 404 Not Found status
-//            return Response.status(Response.Status.NOT_FOUND).build();
-//        } else {
-//            // If movies were found, return them as JSON
-//            GenericEntity<List<Theater>> entity = new GenericEntity<>(allTheaters) {
-//            };
-//            return Response.ok(entity).build();
-//        }
+        return fetchAllResponse(allTheaters);
     }
 
     /**
-     * Handles fetching all of something
-     * @param list
-     * @return
+     * Handles returning a list of movies of theaters
+     * @param list list of movies or theaters
+     * @return http response for the list
      */
-    private Response fetchAll(List list) {
+    private Response fetchAllResponse(List list) {
         if (list.isEmpty()) {
             return Response.status(Response.Status.NOT_FOUND).build();
         } else {
@@ -161,8 +141,8 @@ public class MovieTheater {
         id = movie.getTheater().getTheaterId();
 
 
-        // Checks if theater already exists
-        // If not, add it
+        // Checks if this movie's theater already exists
+        // If not, it will be added
         // Theater must match exactly, or it will make a new one
         // To avoid exact matching, maybe only check id?
         if (theaterDao.getById(id).equals(movie.getTheater())) {
