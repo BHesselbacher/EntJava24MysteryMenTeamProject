@@ -1,5 +1,6 @@
 package com.teamproject.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 /**
@@ -20,6 +21,7 @@ public class Movie {
     @Column(name = "duration")
     private int durationMinutes;
 
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "theaterId")
     private Theater theater;
@@ -38,6 +40,17 @@ public class Movie {
         this.director = director;
         this.durationMinutes = durationMinutes;
         this.theater = theater;
+    }
+
+    /**
+     * Constructs a movie based on another movie
+     * @param newMovie Movie to be copied
+     */
+    public Movie(Movie newMovie) {
+        this.title = newMovie.title;
+        this.director = newMovie.director;
+        this.durationMinutes = newMovie.durationMinutes;
+        this.theater = newMovie.theater;
     }
 
 
@@ -119,5 +132,35 @@ public class Movie {
      */
     public void setTheater(Theater theater) {
         this.theater = theater;
+    }
+
+    /**
+     * Gets string of data
+     * @return string-ified data
+     */
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "movieId=" + movieId +
+                ", title='" + title + '\'' +
+                ", director='" + director + '\'' +
+                ", durationMinutes=" + durationMinutes +
+                ", theater=" + theater +
+                '}';
+    }
+
+    /**
+     * Compares Movie objects
+     * @param o object to be compared
+     * @return if object equals this instance
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || o.getClass() != getClass()) return false;
+        Movie movie = (Movie) o;
+        return (movieId == movie.movieId && title.equals(movie.title) &&
+                director.equals(movie.director) && durationMinutes == movie.durationMinutes
+                && theater.equals(movie.theater));
     }
 }

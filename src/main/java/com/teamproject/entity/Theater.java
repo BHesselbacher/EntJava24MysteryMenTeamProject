@@ -2,6 +2,7 @@ package com.teamproject.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -23,6 +24,7 @@ public class Theater {
     @Column(name = "ticketCost", nullable = false)
     private double ticketCost;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "theater", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JsonIgnoreProperties("Theater")
     private List<Movie> movies;
@@ -100,6 +102,11 @@ public class Theater {
     public List<Movie> getMovies() {
         return movies;
     }
+
+    /**
+     * Gets string of data
+     * @return string-ified data
+     */
     @Override
     public String toString() {
         return "Theater{" +
@@ -107,5 +114,19 @@ public class Theater {
                 ", theaterName='" + theaterName + '\'' +
                 ", ticketCost=" + ticketCost +
                 '}';
+    }
+
+    /**
+     * Compares Theater objects
+     * @param o object to be compared
+     * @return if object equals this instance
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || o.getClass() != getClass()) return false;
+        Theater theater = (Theater) o;
+        return (theaterId == theater.theaterId && theaterName.equals(theater.theaterName)
+            && ticketCost == theater.ticketCost);
     }
 }
