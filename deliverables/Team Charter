@@ -5,7 +5,7 @@
    - Communication will primarily be via Slack, with team meetings if needed.
 
 **2. Roles and Responsibilities:**
-   - Cole Studebaker: Team Lead. Responcible for coordinating meetings, initial project set up, and API creation.
+   - Cole Studebaker: Team Lead. Responsible for coordinating meetings, initial project set up, and API creation.
    - Bryce Hesselbacher: Responsible for AWS Deployment and database management.
    - Ruben Garcia: Responsible for Entity creation, java docs, and unit tests
    
