@@ -13,3 +13,9 @@
 **3. Timeline and Deadlines:**
    - We will adhere to the project plan timeline and meet deadlines for each milestone.
    - Any delays must be communicated promptly to the team and the teacher (Paula Waite)
+
+**4. Code Collaboration:**
+   - We will use Git as our version control system.
+   - Our branching strategy will follow the Gitflow model, with feature branches branching off from the development branch and merged back via pull requests after code review.
+   - Pull requests must be reviewed by at least one other team member before merging.
+   - Code reviews will focus on ensuring code quality, adherence to coding standards, and catching any potential bugs or issues early in the development process.
