@@ -1,164 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="TeamProject:war" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="Modified some comments">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="3a3d8a14-d18e-4729-b1db-35ee96260667" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Jsp File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BHesselbacher"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BHesselbacher/EntJava24MysteryMenTeamProject.git",
-    "accountId": "d92d4673-a07f-4b90-80de-37009dd505d4"
-  }
-}]]></component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2ejpQcmujYRNoUT6npQvWm0EuJJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "HTTP Request.generated-requests | #2.executor": "Run",
-    "HTTP Request.generated-requests | #3.executor": "Run",
-    "HTTP Request.generated-requests | #4.executor": "Run",
-    "HTTP Request.generated-requests | #5.executor": "Run",
-    "JUnit.MovieDaoTest.executor": "Coverage",
-    "JUnit.MovieDaoTest.getByIDSuccess.executor": "Run",
-    "JUnit.MovieDaoTest.insertAndDeleteSuccess.executor": "Run",
-    "JUnit.MovieDaoTest.testGetProperty.executor": "Run",
-    "JUnit.MovieDaoTest.testGetPropertyLike.executor": "Run",
-    "JUnit.MovieDaoTest.testId.executor": "Run",
-    "JUnit.TheaterDaoTest.executor": "Coverage",
-    "JUnit.TheaterDaoTest.getByIDSuccess.executor": "Run",
-    "JUnit.TheaterDaoTest.insertAndDeleteSuccess.executor": "Run",
-    "JUnit.TheaterDaoTest.insertSuccess.executor": "Run",
-    "JUnit.TheaterDaoTest.testGetAll.executor": "Run",
-    "JUnit.TheaterDaoTest.testGetProperty.executor": "Run",
-    "JUnit.TheaterDaoTest.testInsertFail.executor": "Run",
-    "JUnit.TheaterDaoTest.testUpdate.executor": "Run",
-    "Maven.TeamProject [clean].executor": "Run",
-    "Maven.TeamProject [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 8.5.98.executor": "Debug",
-    "git-widget-placeholder": "dev",
+    "Tomcat Server.Tomcat 8.5.98.executor": "Run",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/rgarc/IdeaProjects/EntJava24MysteryMenTeamProject/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.applicationServers",
     "vue.rearranger.settings.migration": "true"
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora_aws&quot;,
-      &quot;mysql&quot;
-    ]
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\rgarc\IdeaProjects\EntJava24MysteryMenTeamProject\src\test\resources" />
-      <recent name="C:\Users\rgarc\IdeaProjects\EntJava24MysteryMenTeamProject\src\main\resources" />
-      <recent name="C:\Users\rgarc\IdeaProjects\temp\BeforeTheFuckUpShit\EntJava24MysteryMenTeamProject\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rgarc\IdeaProjects\EntJava24MysteryMenTeamProject\src\main\webapp" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.98">
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="MovieDaoTest.testGetPropertyLike" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeamProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.teamproject.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
-      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.MovieDaoTest" />
-      <option name="METHOD_NAME" value="testGetPropertyLike" />
-      <option name="TEST_OBJECT" value="method" />
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TheaterDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TeamProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.teamproject.persistance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.teamproject.persistance" />
-      <option name="MAIN_CLASS_NAME" value="com.teamproject.persistance.TheaterDaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,7 +51,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="7e189e4b-8acd-4433-a389-36e1b664f7c4" />
+        <option name="BASE_DIRECTORY_NAME" value="7bba0fe2-e511-443c-a84e-fd863b74ca63" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -181,7 +59,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59738" />
+        <option name="DEBUG_PORT" value="49692" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -250,360 +128,29 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="HTTP Request.generated-requests | #2" />
-      <item itemvalue="HTTP Request.generated-requests | #4" />
-      <item itemvalue="HTTP Request.generated-requests | #5" />
-      <item itemvalue="JUnit.MovieDaoTest.testGetPropertyLike" />
-      <item itemvalue="JUnit.TheaterDaoTest" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.98" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.TheaterDaoTest" />
-        <item itemvalue="JUnit.MovieDaoTest.testGetPropertyLike" />
-        <item itemvalue="HTTP Request.generated-requests | #5" />
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #4" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-f644763e9732-af3fa2b8" />
+        <option value="jdk-11.0.22-temurin-11.0.22-f644763e9732-193cb75d" />
+        <option value="jdk-18.0.2-azul-18.0.2.1-f644763e9732-d6bd9cf6" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8017e31-cdc5-42a7-84dc-150cce0eb7c8" name="Changes" comment="" />
-      <created>1712427826738</created>
+      <changelist id="3a3d8a14-d18e-4729-b1db-35ee96260667" name="Changes" comment="" />
+      <created>1713467580018</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1712427826738</updated>
-      <workItem from="1712427827782" duration="2426000" />
-      <workItem from="1712756369451" duration="9740000" />
-      <workItem from="1713029189407" duration="7085000" />
-      <workItem from="1713215483593" duration="39000" />
-      <workItem from="1713215992722" duration="902000" />
-      <workItem from="1713216934836" duration="911000" />
-      <workItem from="1713284590511" duration="2599000" />
+      <updated>1713467580018</updated>
+      <workItem from="1713467581185" duration="213000" />
     </task>
-    <task id="LOCAL-00001" summary="Created database utility">
-      <option name="closed" value="true" />
-      <created>1712427862274</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1712427862274</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Created properties loader interface">
-      <option name="closed" value="true" />
-      <created>1712427873486</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1712427873486</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added method to get movies">
-      <option name="closed" value="true" />
-      <created>1712427934006</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1712427934006</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Methods to retrieve data">
-      <option name="closed" value="true" />
-      <created>1712427950794</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712427950794</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Tests">
-      <option name="closed" value="true" />
-      <created>1712427966448</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712427966448</updated>
-    </task>
-    <task id="LOCAL-00006" summary="JavaDoc">
-      <option name="closed" value="true" />
-      <created>1712717139174</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712717139174</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Misc changes">
-      <option name="closed" value="true" />
-      <created>1712720025071</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1712720025071</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Misc changes">
-      <option name="closed" value="true" />
-      <created>1712720046191</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1712720046191</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Log4j properties">
-      <option name="closed" value="true" />
-      <created>1712729992318</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1712729992318</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Generic Dao">
-      <option name="closed" value="true" />
-      <created>1712730006146</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730006146</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Base webpage for documentation">
-      <option name="closed" value="true" />
-      <created>1712730021135</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730021135</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Removed old files">
-      <option name="closed" value="true" />
-      <created>1712730034096</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730034096</updated>
-    </task>
-    <task id="LOCAL-00013" summary="gitignore updated">
-      <option name="closed" value="true" />
-      <created>1712730042861</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730042861</updated>
-    </task>
-    <task id="LOCAL-00014" summary="New tests">
-      <option name="closed" value="true" />
-      <created>1712730051395</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730051395</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Utility methods">
-      <option name="closed" value="true" />
-      <created>1712730066138</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730066138</updated>
-    </task>
-    <task id="LOCAL-00016" summary="New tests">
-      <option name="closed" value="true" />
-      <created>1712730099091</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730099091</updated>
-    </task>
-    <task id="LOCAL-00017" summary="misc">
-      <option name="closed" value="true" />
-      <created>1712730109240</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730109240</updated>
-    </task>
-    <task id="LOCAL-00018" summary="JavaDoc">
-      <option name="closed" value="true" />
-      <created>1712730614339</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1712730614339</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Pom updates">
-      <option name="closed" value="true" />
-      <created>1712731412057</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1712731412057</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Fixed infinite recursion with json response">
-      <option name="closed" value="true" />
-      <created>1712732195377</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1712732195377</updated>
-    </task>
-    <task id="LOCAL-00021" summary="responses for get alls">
-      <option name="closed" value="true" />
-      <created>1712732467007</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1712732467007</updated>
-    </task>
-    <task id="LOCAL-00022" summary="new responses">
-      <option name="closed" value="true" />
-      <created>1712770575189</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1712770575189</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Error page">
-      <option name="closed" value="true" />
-      <created>1713016318173</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1713016318173</updated>
-    </task>
-    <task id="LOCAL-00024" summary="navbar change">
-      <option name="closed" value="true" />
-      <created>1713016356246</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1713016356246</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Error page">
-      <option name="closed" value="true" />
-      <created>1713016373070</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1713016373070</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Condensed methods">
-      <option name="closed" value="true" />
-      <created>1713031019554</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1713031019554</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added new method to search like">
-      <option name="closed" value="true" />
-      <created>1713142464612</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1713142464612</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Added tests for searching by like">
-      <option name="closed" value="true" />
-      <created>1713142482717</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1713142482717</updated>
-    </task>
-    <task id="LOCAL-00029" summary="New methods">
-      <option name="closed" value="true" />
-      <created>1713142498639</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1713142498639</updated>
-    </task>
-    <task id="LOCAL-00030" summary="misc">
-      <option name="closed" value="true" />
-      <created>1713143913637</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1713143913637</updated>
-    </task>
-    <task id="LOCAL-00031" summary="misc">
-      <option name="closed" value="true" />
-      <created>1713143940472</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1713143940472</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Basic documentation">
-      <option name="closed" value="true" />
-      <created>1713287093053</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1713287093053</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Basic documentation">
-      <option name="closed" value="true" />
-      <created>1713287104733</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1713287104733</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Modified some comments">
-      <option name="closed" value="true" />
-      <created>1713287126005</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1713287126005</updated>
-    </task>
-    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added method to get movies" />
-    <MESSAGE value="Methods to retrieve data" />
-    <MESSAGE value="Tests" />
-    <MESSAGE value="Misc changes" />
-    <MESSAGE value="Log4j properties" />
-    <MESSAGE value="Generic Dao" />
-    <MESSAGE value="Base webpage for documentation" />
-    <MESSAGE value="Removed old files" />
-    <MESSAGE value="gitignore updated" />
-    <MESSAGE value="Utility methods" />
-    <MESSAGE value="New tests" />
-    <MESSAGE value="JavaDoc" />
-    <MESSAGE value="Pom updates" />
-    <MESSAGE value="Fixed infinite recursion with json response" />
-    <MESSAGE value="responses for get alls" />
-    <MESSAGE value="new responses" />
-    <MESSAGE value="navbar change" />
-    <MESSAGE value="Error page" />
-    <MESSAGE value="Condensed methods" />
-    <MESSAGE value="Added new method to search like" />
-    <MESSAGE value="Added tests for searching by like" />
-    <MESSAGE value="New methods" />
-    <MESSAGE value="misc" />
-    <MESSAGE value="Basic documentation" />
-    <MESSAGE value="Modified some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified some comments" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$TheaterDaoTest.ic" NAME="TheaterDaoTest Coverage Results" MODIFIED="1713142180012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.teamproject.persistance.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/EntJava24MysteryMenTeamProject$MovieDaoTest.ic" NAME="MovieDaoTest Coverage Results" MODIFIED="1712729837565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.teamproject.persistance.*</FILTER>
-    </SUITE>
   </component>
 </project>
