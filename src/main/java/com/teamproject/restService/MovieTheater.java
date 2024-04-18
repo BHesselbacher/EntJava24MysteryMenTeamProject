@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * MovieTheater api
  */
-@Path("/theater")
+@Path("/theaters")
 public class MovieTheater {
     // Initialize the DAO instance
 
