@@ -1,5 +1,7 @@
 # EntJava24MysteryMenTeamProject
 
+http://mystery-men-env-1.eba-ngmsyung.us-east-2.elasticbeanstalk.com/
+
 ## Problem Statement
 For movie enthusiasts, keeping up with movies in the theaters can be a little time consuming. Movies constantly change up, different theaters charge different prices for tickets, and checking all of that can require jumping across the web. What if, instead, there was a way for the community to keep each other updated on all of this information?
 
