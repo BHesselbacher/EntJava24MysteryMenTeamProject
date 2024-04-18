@@ -7,21 +7,21 @@ Our API helps keep things convenient by allowing a way to store, update, and rec
 
 # Project Plan
 
-## Week 1: Planning and Setup
+## Week 1: Planning and Setup (3/31/24 - 4/6/24)
 - Define project requirements and scope.
 - Set up development environment for the web API.
 - Assign roles and responsibilities within the group.
 - Draft Team Charter/Ground Rules.
 - **Create Team Resume.**
 
-## Week 2: Development
+## Week 2: Development (4/7/24 - 4/13/24)
 - Design API endpoints for retrieving theater information and movie listings.
 - Implement basic functionality to fetch and display theater and movie data.
 - Create the database schema for theaters and movies.
 - Create a DAO that will work for both movies and theaters
 - Create an API class that will handle get requests, post requests, and delete requests
 
-## Week 3: Testing and Finalization
+## Week 3: Testing and Finalization (4/14/24 - 4/20/24)
 - Conduct testing of the API's functionality.
 - Test the DAO to ensure full code coverage anf functionality
 - Debug any issues and make necessary adjustments.
