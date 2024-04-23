@@ -11,7 +11,7 @@
 
 <h3>Error!</h3>
 
-<p>Nothing was found here, or something else went wrong. return home <a href="/TeamProject_war">here</a></p>
+<p>Nothing was found here, or something else went wrong. return home <a href="/">here</a></p>
 
 </body>
 </html>
