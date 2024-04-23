@@ -44,7 +44,7 @@
     </div>
     <div class="container-sm">
         <div class="p-3 mb-2 bg-danger text-white">
-            DELETE /theater/[movies|theaters]
+            DELETE /theater/[movies|theaters]/{id}
         </div>
         <p>deletes a movie or theater</p>
     </div>
